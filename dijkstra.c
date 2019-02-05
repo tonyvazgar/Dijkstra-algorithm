@@ -5,7 +5,7 @@
 
 //--------------------------------
 #define V_SIZE	6
-#define NAME_FILE "data/test-1_6.txt"
+#define NAME_FILE "data/test-1_6.txt" 
 #define STARTING_NODE 0
 //--------------------------------
 
