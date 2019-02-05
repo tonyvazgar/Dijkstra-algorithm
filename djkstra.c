@@ -128,7 +128,7 @@ int main()
     */
     
     int W[V_SIZE][V_SIZE];
-    readmatrix(64, W, "matrix3.txt");
+    readmatrix(64, W, "matrix64.txt");
     
     
     
