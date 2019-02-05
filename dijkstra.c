@@ -4,9 +4,9 @@
 #define inf 	100000 	//Representing infinity
 
 //--------------------------------
-#define V_SIZE	8
-#define NAME_FILE "prueba_8.txt"
-#define STARTING_NODE 2
+#define V_SIZE	6
+#define NAME_FILE "data/prueba_6.txt"
+#define STARTING_NODE 0
 //--------------------------------
 
 //Array fill
@@ -150,7 +150,7 @@ int main()
         { inf, 0 62 0 0 0 0 0 0 0 0 0 0 0 0 0}};*/
     
 	//Printing the matrix to see the representation of the graph
-    //for(size_t i = 0; i < V_SIZE; ++i) { for(size_t j = 0; j < V_SIZE; ++j){ printf("[%7d]", W[i][j]); } puts(""); }
+    for(size_t i = 0; i < V_SIZE; ++i) { for(size_t j = 0; j < V_SIZE; ++j){ printf("[%7d]", W[i][j]); } puts(""); }
     
 	//Do dijkstra in the graph W from 0 node
     dijkstra(W, V_SIZE, STARTING_NODE, dist);
