@@ -10,10 +10,10 @@ How to run:
 3. Change STARTING_NODE to choose the node to start the shortest path.
 
 Output of the program:
-![alt text](https://github.com/tonyvazgar/Dijkstra-algorithm/blob/master/op.png?raw=true)
+![alt text](https://github.com/tonyvazgar/Dijkstra-algorithm/blob/master/pics/op.png?raw=true)
 
-![alt text](https://github.com/tonyvazgar/Dijkstra-algorithm/blob/master/maxresdefault.jpg)
+![alt text](https://github.com/tonyvazgar/Dijkstra-algorithm/blob/master/pics/maxresdefault.jpg)
 Example:
-![alt text](https://github.com/tonyvazgar/Dijkstra-algorithm/blob/master/example%20working.jpeg?raw=true)
+![alt text](https://github.com/tonyvazgar/Dijkstra-algorithm/blob/master/pics/example%20working.jpeg?raw=true)
 
 
