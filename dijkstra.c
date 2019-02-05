@@ -6,6 +6,7 @@
 //--------------------------------
 #define V_SIZE	6
 #define NAME_FILE "prueba_6.txt"
+#define STARTING_NODE 0
 //--------------------------------
 
 //Array fill
@@ -152,6 +153,6 @@ int main()
     //for(size_t i = 0; i < V_SIZE; ++i) { for(size_t j = 0; j < V_SIZE; ++j){ printf("[%7d]", W[i][j]); } puts(""); }
     
 	//Do dijkstra in the graph W from 0 node
-    dijkstra(W, V_SIZE, 0, dist);
+    dijkstra(W, V_SIZE, STARTING_NODE, dist);
     return 0;
 }
