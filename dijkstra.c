@@ -4,9 +4,9 @@
 #define inf 	100000 	//Representing infinity
 
 //--------------------------------
-#define V_SIZE	6
-#define NAME_FILE "prueba_6.txt"
-#define STARTING_NODE 0
+#define V_SIZE	8
+#define NAME_FILE "prueba_8.txt"
+#define STARTING_NODE 2
 //--------------------------------
 
 //Array fill
