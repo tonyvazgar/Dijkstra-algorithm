@@ -1,6 +1,6 @@
 # Dijkstra-algorithm
 
-Getting files for read from: https://github.com/Hoverbear/CSC-225/tree/master/Assignment%205/tests
+Getting files to read from: https://github.com/Hoverbear/CSC-225/tree/master/Assignment%205/tests
 
 How to run:
 1. Change V_SIZE value for the number of the txt file you want to test for example 16 for "prueba_16.txt".
