@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//Representing infinity
-#define inf 	100000
-//Number of nodes
-#define V_SIZE	64
+#define inf 	100000 	//Representing infinity
+
+//--------------------------------
+#define V_SIZE	6
+#define NAME_FILE "prueba.txt"
+//--------------------------------
 
 //Array fill
 void array_fill(int * array, int len, int val) {
@@ -13,7 +15,6 @@ void array_fill(int * array, int len, int val) {
 		array[i] = val; 
 	}
 }
-
 
 /**
  * Input parameters：
@@ -114,7 +115,6 @@ int readmatrix(size_t size, int (*a)[size], const char* filename) {
     return 1;
 }
 
-
 int main()
 {
 	int dist[V_SIZE];
@@ -128,9 +128,7 @@ int main()
     */
     
     int W[V_SIZE][V_SIZE];
-    readmatrix(64, W, "matrix64.txt");
-    
-    
+    readmatrix(V_SIZE, W, NAME_FILE);
     
     /*int W[V_SIZE][V_SIZE] = {
         {  0,  inf,  inf,  inf,  inf,  inf,  inf,  38,  inf,  inf,  inf,  inf,  inf,  inf,  inf,  inf },
@@ -151,8 +149,7 @@ int main()
         { inf, 0 62 0 0 0 0 0 0 0 0 0 0 0 0 0}};*/
     
 	//Printing the matrix to see the representation of the graph
-    for(size_t i = 0; i < 64; ++i) {
-        for(size_t j = 0; j < 64; ++j){ printf("%9d", W[i][j]); } puts(""); }
+    //for(size_t i = 0; i < V_SIZE; ++i) { for(size_t j = 0; j < V_SIZE; ++j){ printf("[%7d]", W[i][j]); } puts(""); }
     
 	//Do dijkstra in the graph W from 0 node
     dijkstra(W, V_SIZE, 0, dist);

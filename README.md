@@ -2,8 +2,10 @@
 
 Getting files for read from: https://github.com/Hoverbear/CSC-225/tree/master/Assignment%205/tests
 
-Para correr:
-en la linea 7 cambiar V_SIZE al numero del tamaño de la matriz, en la linea 131 poner el mismo numero, En el For de la linea 153 y 155 tambien (opcional)
+How to run:
+1. change V_SIZE value for the number of the txt file you want to test for example 16 for "prueba_16.txt"
+
+2. change NAME_FILE value to the name of the file you need.
 
 Output of the program:
 ![alt text](https://github.com/tonyvazgar/Dijkstra-algorithm/blob/master/output.png?raw=true)
