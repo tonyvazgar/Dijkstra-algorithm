@@ -5,7 +5,7 @@
 
 //--------------------------------
 #define V_SIZE	6
-#define NAME_FILE "prueba.txt"
+#define NAME_FILE "prueba_6.txt"
 //--------------------------------
 
 //Array fill
