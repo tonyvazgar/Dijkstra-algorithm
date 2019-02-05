@@ -9,7 +9,9 @@
 //Array fill
 void array_fill(int * array, int len, int val) {
 	int i;
-	for (i = 0; i < len; i++) { array[i] = val; }
+	for (i = 0; i < len; i++){ 
+		array[i] = val; 
+	}
 }
 
 
@@ -89,21 +91,19 @@ void dijkstra(int graph[][V_SIZE], int n, int start, int dist[]) {
 	return ;
 }
 
-
 int readmatrix(size_t size, int (*a)[size], const char* filename) {
     FILE *pf;
     pf = fopen (filename, "r");
-    if (pf == NULL){
-        return 0;
-    }
+    if (pf == NULL){ return 0; }
     
+	//Lectura del archivo donde lee puros enteros
     for(size_t i = 0; i < size; ++i) {
-        for(size_t j = 0; j < size; ++j){
-            fscanf(pf, "%d", a[i] + j);
-        }
+        for(size_t j = 0; j < size; ++j){ fscanf(pf, "%d", a[i] + j); }
     }
     fclose (pf);
     
+	//Asignamos los valores 0 a nuestra representación de infinito
+	//excepto los de la diagonal
     for(size_t i= 0; i < size; i++){
         for(size_t j= 0; j < size; j++){
             if(a[i][j] == 0 && i != j){
@@ -150,14 +150,11 @@ int main()
         { inf, 0 0 0 55 0 0 0 0 0 0 0 0 0 0 0},
         { inf, 0 62 0 0 0 0 0 0 0 0 0 0 0 0 0}};*/
     
-    for(size_t i = 0; i < 64; ++i)
-    {
-        for(size_t j = 0; j < 64; ++j){
-            printf("%9d", W[i][j]);
-        }
-        puts("");
-    }
+	//Printing the matrix to see the representation of the graph
+    for(size_t i = 0; i < 64; ++i) {
+        for(size_t j = 0; j < 64; ++j){ printf("%9d", W[i][j]); } puts(""); }
     
+	//Do dijkstra in the graph W from 0 node
     dijkstra(W, V_SIZE, 0, dist);
     return 0;
 }
