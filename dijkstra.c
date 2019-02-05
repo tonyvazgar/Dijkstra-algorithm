@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 #define inf 	100000 	//Representing infinity
 
 //--------------------------------
-#define V_SIZE	6
-#define NAME_FILE "data/test-1_6.txt" 
+#define V_SIZE	256
+#define NAME_FILE "data/test-21_256.txt" 
 #define STARTING_NODE 0
 //--------------------------------
 
@@ -25,7 +26,7 @@ void array_fill(int * array, int len, int val) {
  *	dist:	where do we are going to put the distance of nodes
  * */
 void dijkstra(int graph[][V_SIZE], int n, int start, int dist[]) {
-
+	
 	int* path=(int*)malloc(sizeof(int)*n);
 	int* shortest=(int*)malloc(sizeof(int)*n);
 	int* mark=(int*)malloc(sizeof(int)*n);
@@ -44,6 +45,7 @@ void dijkstra(int graph[][V_SIZE], int n, int start, int dist[]) {
 	}
 
 	mark[start]=1;
+	clock_t begin_clock = clock();
 	while(1) {
 		min = inf;
         v = -1;
@@ -68,6 +70,10 @@ void dijkstra(int graph[][V_SIZE], int n, int start, int dist[]) {
 			}
 		}
 	}
+
+	clock_t end_clock = clock();
+	double time_spent = (double)(end_clock - begin_clock) / CLOCKS_PER_SEC;
+
 	//Printing the output path
 	printf("Starting node | End node | Source distance | Corresponding path |\n");
 	for(i = 0; i < n; i++) {
@@ -87,6 +93,9 @@ void dijkstra(int graph[][V_SIZE], int n, int start, int dist[]) {
 		}
 		printf("%d\n",shortest[0]);
 	}
+
+	printf("Time elapsed: %f ms\n", time_spent);
+	
 	free(path);
 	free(shortest);
 	free(mark);
