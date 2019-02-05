@@ -8,7 +8,7 @@ How to run:
 3. Change STARTING_NODE to choose the node to start the shortest path.
 
 Output of the program:
-![alt text](https://github.com/tonyvazgar/Dijkstra-algorithm/blob/master/output.png?raw=true)
+![alt text](https://github.com/tonyvazgar/Dijkstra-algorithm/blob/master/op.png?raw=true)
 
 ![alt text](https://github.com/tonyvazgar/Dijkstra-algorithm/blob/master/maxresdefault.jpg)
 Example:
