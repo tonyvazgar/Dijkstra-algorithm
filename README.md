@@ -8,7 +8,7 @@ How to run:
     ```
     octave --persist TIEMPOS.txt
     ```
-    and see the graphs as follows:c
+    and see the graphs as follows:
 
 ![alt text](https://github.com/tonyvazgar/Dijkstra-algorithm/blob/master/pics/Graph.png?raw=true)
 ![alt text](https://github.com/tonyvazgar/Dijkstra-algorithm/blob/master/pics/Graph%20Zoomed.png?raw=true)
@@ -22,7 +22,6 @@ Output of the program:
 ![alt text](https://github.com/tonyvazgar/Dijkstra-algorithm/blob/master/pics/op.png?raw=true)
 
 ![alt text](https://github.com/tonyvazgar/Dijkstra-algorithm/blob/master/pics/maxresdefault.jpg)
-Example:
-![alt text](https://github.com/tonyvazgar/Dijkstra-algorithm/blob/master/pics/example%20working.jpeg?raw=true)
+
 
 
