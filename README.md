@@ -22,6 +22,3 @@ Output of the program:
 ![alt text](https://github.com/tonyvazgar/Dijkstra-algorithm/blob/master/pics/op.png?raw=true)
 
 ![alt text](https://github.com/tonyvazgar/Dijkstra-algorithm/blob/master/pics/maxresdefault.jpg)
-
-
-
