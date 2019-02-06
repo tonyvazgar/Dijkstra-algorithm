@@ -1,9 +1,13 @@
-6 0.000013
-8 0.000004
-15 0.000006
-16 0.0000062
-26 0.0000116
-32 0.0000146
-64 0.0000486
-128 0.000162
-256 0.0004464
+function graficar
+
+X = [6,8,15,16,26,32,64,128,256];
+Y =[0.000013,0.000004,0.000006,0.0000062,0.0000116,0.0000146,0.0000486,0.000162,0.0004464];
+plot(X,Y)
+title ("Time vs Node size matrix");
+xlabel("Node size matrix");
+ylabel("Time");
+printf("Imprimiendo gráfica\n");
+
+endfunction
+
+graficar();
