@@ -5,10 +5,10 @@ How to run:
 2. Change NAME_FILE value to the name of the file you need.
 3. Change STARTING_NODE to choose the node to start the shortest path.
 4. To graph the times averaged you need to install octave in your computer, then type:
-    '''
+    ```
     octave --persist TIEMPOS.txt
-    '''
-    and see the graphs as follows:
+    ```
+    and see the graphs as follows:c
 
 ![alt text](https://github.com/tonyvazgar/Dijkstra-algorithm/blob/master/pics/Graph.png?raw=true)
 ![alt text](https://github.com/tonyvazgar/Dijkstra-algorithm/blob/master/pics/Graph%20Zoomed.png?raw=true)
