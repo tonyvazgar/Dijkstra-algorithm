@@ -35,17 +35,18 @@ void dijkstra(int graph[][V_SIZE], int n, int start, int dist[]) {
 	array_fill(mark,n, 0);
 	array_fill(dist,n, inf);
 
-	for(i=0; i<n; i++) {
+	for(i=0; i<n; i++) { 
 		dist[i] = graph[start][i];
 		if(i != start && dist[i] < inf){
-            path[i]=start;
-        }else{
-            path[i]=-1;
+			path[i] = start;
+			}else{
+				path[i] = -1;
         }
 	}
 
-	mark[start]=1;
+	mark[start] = 1;
 	clock_t begin_clock = clock();
+	
 	while(1) {
 		min = inf;
         v = -1;
