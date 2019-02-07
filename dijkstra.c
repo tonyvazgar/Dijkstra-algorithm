@@ -52,9 +52,9 @@ void dijkstra(int graph[][V_SIZE], int n, int start, int dist[]) {
 		//Encontrar la distancia más pequeña
 		for(i = 0; i < n; i++) {
 			if(!mark[i]) {
-				if(dist[i]<min){
-                    min=dist[i];
-                    v=i;
+				if(dist[i] < min){
+                    min = dist[i];
+                    v = i;
                 }
 			}
 		}
@@ -62,11 +62,9 @@ void dijkstra(int graph[][V_SIZE], int n, int start, int dist[]) {
 		//Actualizamos la distancia más corta
 		mark[v]=1;
 		for(i = 0; i < n; i++) {
-			if(!mark[i] &&
-					graph[v][i]!=inf&&
-					dist[v]+graph[v][i]<dist[i]) {
-				dist[i]=dist[v]+graph[v][i];
-				path[i]=v;
+			if(!mark[i] && graph[v][i]!=inf && dist[v]+graph[v][i]<dist[i]) {
+				dist[i] = dist[v] + graph[v][i];
+				path[i] = v;
 			}
 		}
 	}
@@ -84,11 +82,13 @@ void dijkstra(int graph[][V_SIZE], int n, int start, int dist[]) {
 		printf("        %d        | ",dist[i]);
 		int k=0;
 		shortest[k]=i;
-		while(path[shortest[k]]!=start) {
-			k++;shortest[k]=path[shortest[k-1]];
+		while(path[shortest[k]] != start) {
+			k++;
+			shortest[k] = path[shortest[k-1]];
 		}
-		k++;shortest[k]=start;
-		for(j=k;j>0;j--) {
+		k++;
+		shortest[k] = start;
+		for(j = k; j > 0; j--) {
 			printf("%d->",shortest[j]);
 		}
 		printf("%d\n",shortest[0]);
