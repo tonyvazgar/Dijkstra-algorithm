@@ -22,3 +22,5 @@ Output of the program:
 ![alt text](https://github.com/tonyvazgar/Dijkstra-algorithm/blob/master/pics/op.png?raw=true)
 
 ![alt text](https://github.com/tonyvazgar/Dijkstra-algorithm/blob/master/pics/maxresdefault.jpg)
+
+References: https://www.thecrazyprogrammer.com/2014/03/dijkstra-algorithm-for-finding-shortest-path-of-a-graph.html
